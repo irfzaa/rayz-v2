@@ -18,10 +18,10 @@ const ROUTES_ETH = [
 ];
 
 const ROUTES_SOLANA = [
-  { url: RouteName.home, name: 'Marketplace' },
+  { url: RouteName.marketplaceWithUrl, name: 'Marketplace Home' },
   { url: RouteName.sell, name: 'Sell' },
-  { url: RouteName.auctionsView, name: 'Auctions' },
-  { url: RouteName.drop, name: 'Edition Drops' },
+  
+  
 ];
 
 const getRoutes = () => {
@@ -33,10 +33,9 @@ const getRoutes = () => {
 };
 
 const OTHER_LAYOUT_ROUTES = [
-  { url: RouteName.customToken, name: 'Custom Token Marketplace' },
-  { url: RouteName.multipleCollection, name: 'Multi Collection Marketplace' },
-  { url: RouteName.marketplaceWithUrl, name: 'Marketplace With URL' },
   { url: RouteName.activityView, name: 'Marketplace Activity' },
+  { url: RouteName.auctionsView, name: 'Auction' },
+
 ];
 
 const TopNav: React.FC = () => {
@@ -75,7 +74,7 @@ const TopNav: React.FC = () => {
     <HeaderBar>
       <Logo>
         <Link to={RouteName.home}>
-          <img alt="" src="/logo.png" />
+          <img alt="/marketplace-home" src="/logo.png" />
         </Link>
       </Logo>
       <Menu>
@@ -90,7 +89,7 @@ const TopNav: React.FC = () => {
             onClick={handleToggle}
             className={OTHER_LAYOUT_ROUTES.some((item) => item.url === pathname) ? 'active' : ''}
           >
-            Other Layouts
+            Activity & Auction
             <Popper
               open={open}
               anchorEl={anchorRef.current}
@@ -124,7 +123,7 @@ const TopNav: React.FC = () => {
 };
 
 const HeaderBar = styled.div`
-  display: flex;
+  display: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -138,8 +137,9 @@ const DropdownAnchor = styled.li`
 
   &:hover,
   &:active {
-    color: rgb(131, 146, 161);
+    color: #ADDDE1;
     border-bottom: 4px solid var(--title-text-color);
+    
   }
 
   > div {
@@ -148,10 +148,14 @@ const DropdownAnchor = styled.li`
 
   .MuiList-root {
     margin-top: 15px;
+    background-color: #ADDDE1;
+    font-size: 16px;
+    border-radius: 12px;
   }
   a {
     padding-top: 4px;
     padding-bottom: 4px;
+    
 
     &:hover {
       border-bottom: 0px;
@@ -164,22 +168,24 @@ const Wallet = styled.ul`
   flex: 0 0 auto;
   margin: 0;
   padding: 0;
+  
 `;
 
 const Logo = styled.div`
   flex: 0 0 auto;
-  margin-right: 10px;
-
+  margin-right: 0px;
+  margin-bottom: 40px;
   img {
-    height: 60px;
+    height: 200px;
   }
 `;
 
 const Menu = styled.ul`
   list-style: none;
   display: inline-flex;
-  flex: 1 0 auto;
-  margin-bottom: 0;
+  flex: 3 0 auto;
+  margin-bottom: 12;
+  font-weight: Bold;
 
   > .active {
     border-bottom: 4px solid var(--title-text-color);
@@ -215,7 +221,7 @@ const Menu = styled.ul`
     }
 
     &:hover > a {
-      color: rgb(131, 146, 161);
+      color: #fff;
     }
   }
 `;

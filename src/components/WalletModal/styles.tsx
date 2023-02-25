@@ -4,7 +4,7 @@ import { Modal } from 'antd';
 export const ModelContainer = styled(Modal)`
   .ant-modal-content {
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 16px;
   }
 
   .ant-menu {
@@ -45,6 +45,7 @@ export const ModelContainer = styled(Modal)`
     margin: 0px !important;
     padding: 0px !important;
     height: 48px !important;
+    
   }
 
   .wallet-adapter-modal-menu-item:not(:last-child) {
@@ -82,7 +83,7 @@ export const ModelContainer = styled(Modal)`
   }
 
   .wallet-adapter-multi-button-icon {
-    font-size: 20px;
+    font-size: 32px;
     margin-right: 12px;
   }
 

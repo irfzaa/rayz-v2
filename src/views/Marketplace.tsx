@@ -15,17 +15,14 @@ const Marketplace: React.FC = () => {
       <Stat
         candyShop={candyShop}
         title={'Marketplace'}
-        description={
-          'Candy Shop is an open source library that allows you to create NFT storefronts and auctions in minutes!'
-        }
-        style={{ paddingBottom: 50 }}
+        description={'You can buy NFT with PAW token!'}
       />
-
       <Orders
         wallet={userWallet}
         candyShop={candyShop}
         walletConnectComponent={<ConnectButton />}
-        search
+        // redirect to single NFT order URL instead of using buy modal
+        url={'/marketplace/:tokenMint'}
       />
     </DesContainer>
   );
