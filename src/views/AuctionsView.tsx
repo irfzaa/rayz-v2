@@ -13,7 +13,7 @@ const AuctionsView: React.FC = () => {
       <h1 style={{ marginTop: 40, marginBottom: 15 }}>Auctions</h1>
       <p style={{ marginBottom: 40 }}>
         Note: Shop owners can create auctions in the{' '}
-        <a href="https://candy.liqnft.com/shop/auctions" target="_blank" rel="noreferrer noopener">
+        <a href="..." target="_blank" rel="noreferrer noopener">
           admin panel
         </a>
         .

@@ -8,5 +8,5 @@ export enum RouteName {
   drop = '/drop',
   customToken = '/custom-token-marketplace',
   multipleCollection = '/multi-collection-marketplace',
-  marketplaceWithUrl = '/marketplace-with-url',
+  marketplaceWithUrl = '/marketplace-home',
 }

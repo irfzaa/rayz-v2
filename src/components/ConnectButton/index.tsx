@@ -46,7 +46,7 @@ export const ConnectButton = () => {
           type="primary"
           onClick={() => setVisible(true)}
         >
-          Connect
+          Connect Wallet
         </ConnectButtonStyle>
       )}
     </>
@@ -55,18 +55,18 @@ export const ConnectButton = () => {
 
 const ConnectButtonStyle = styled(Button)`
   border: none;
-  color: #fff;
+  color: white;
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  height: 40px;
+  font-family: 'Poppin', 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 50px;
   line-height: 50px;
   padding: 6px 24px;
   border-radius: 100px;
-  background-color: #4e44ce;
+  background-color: #38B6FF;
   margin: 0 auto;
 
   img {

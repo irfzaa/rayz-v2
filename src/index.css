@@ -3,30 +3,30 @@
 @import '~antd/dist/antd.dark.css';
 
 :root {
-  --main-background-color: #343a50;
+  --main-background-color: #ADDDE1;
   --card-background-color: #51576d;
   --card-background-lighter-color: #7a7f92;
-  --main-text-color: #f7f6f4;
-  --title-text-color: #3cba8b;
+  --main-text-color:  #B34B81;
+  --title-text-color: #B34B81;
 }
 
 body {
-  background-color: var(--main-background-color);
-  /*background: url('img/background.png');
-  background-size: cover; */
+  background: linear-gradient(#ADDDE1, rgba(139, 222, 255, 0.562)),
+  url('src/assets/img/bg1.png');
+  background-size: cover; 
 
   margin: 0;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
-  color: #ffffff;
+  background-color: #ADDDE1;
+  color: #B34B81;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Poppins', monospace;
 }
 
 a {
@@ -40,7 +40,8 @@ p {
 }
 
 h3 {
-  font-weight: normal;
+  font-weight: Bold;
+  font-size: 24px;
 }
 
 /* Candy Shop styling overrides */
@@ -50,4 +51,8 @@ h3 {
 
 .css-1ago99h {
   color: black;
+}
+
+.candy-powered-by {
+  display: none!important;
 }
