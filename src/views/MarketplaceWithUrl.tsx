@@ -15,7 +15,7 @@ const MarketplaceWithUrl: React.FC = () => {
       <Stat
         candyShop={candyShop}
         title={'Marketplace'}
-        description={'You can buy NFT with PAW token!'}
+        description={'You can buy NFT with RAYZ token!'}
       />
       <Orders
         wallet={userWallet}
